@@ -8,6 +8,7 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  max-width: 10rem;
 }
 
 /*
@@ -92,4 +93,251 @@ p {
   font-family: mic-32-new-rounded-web, sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 2.5rem;
+}
+
+/* Dropdown Button */
+.dropbtnplus {
+  background-color: #c35717;
+  color: white;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtnplus:hover,
+.dropbtnplus:focus {
+  background-color: #c35717;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownplus {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-plus {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-plus a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-plus p:hover {
+  background-color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid white;
+}
+
+/*MULTIPLY DROPDOWN*/
+
+.dropbtnmultiply {
+  background-color: #60c965;
+  color: white;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtnmultiply:hover,
+.dropbtnmultiply:focus {
+  background-color: #60c965;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownmultiply {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-multiply {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-multiply a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-multiply p:hover {
+  background-color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid white;
+}
+
+/* DIVIDE DROPDOWN */
+
+.dropbtndivide {
+  background-color: #96c6e2;
+  color: white;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtndivide:hover,
+.dropbtndivide:focus {
+  background-color: #96c6e2;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdowndivide {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-divide {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-divide a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-divide p:hover {
+  background-color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid white;
+}
+
+/* EQUALS DROPDOWN */
+
+.dropbtnequals {
+  background-color: #ca0f11;
+  color: white;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtnequals:hover,
+.dropbtnequals:focus {
+  background-color: #ca0f11;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdownequals {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-equals {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-equals a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content-equals p:hover {
+  background-color: black;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid white;
+}
+
+.Plusimages {
 }

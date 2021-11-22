@@ -1,93 +1,102 @@
-/*console.log("Hello MEJO 187");
-
-let array = ["Bob", "Steve", 10];
-
-//String
-let className = "Foundation of Interactive Media";
-
-//Number
-let classSize = 15;
-
-//Boolean
-let isRemote = false;
-
-//Array
-let roster = ["Christian", "Madi", "Adrian", "Nina"];
-
-//Object
-let mejo = {
-  name: "Foundations of Interactive Media",
-  size: 0,
-  isRemote: false,
-  roster: ["Christian", "Madi", "Adrian", "Nina"],
-};
-
-*/
-
 /*
 Larger
 Comments
 
 
-let x = 4;
-let y = 2;
 
-if (x === y) {
-  console.log("It is equal!");
-} else if (x > y) {
-  console.log("It greater than.");
-} else {
-  console.log("No cases matched.");
+
+
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionPlus() {
+  document.getElementById("myDropdownplus").classList.toggle("show");
 }
 
-function sayHello(name) {
-  console.log(`Hello, ${name}!`);
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtnplus")) {
+    var dropdownsplus = document.getElementsByClassName(
+      "dropdown-content-plus"
+    );
+    var i;
+    for (i = 0; i < dropdownsplus.length; i++) {
+      var openDropdownPlus = dropdownsplus[i];
+      if (openDropdownPlus.classList.contains("show")) {
+        openDropdownPlus.classList.remove("show");
+      }
+    }
+  }
+};
+
+/*MULTIPLY VERSION*/
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionMultiply() {
+  document.getElementById("myDropdownMultiply").classList.toggle("show");
 }
 
-function multiply(x, y) {
-  return x * y;
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtnmultiply")) {
+    var dropdownsmultiply = document.getElementsByClassName(
+      "dropdown-content-multiply"
+    );
+    var i;
+    for (i = 0; i < dropdownsplus.length; i++) {
+      var openDropdownMultiply = dropdownsmultiply[i];
+      if (openDropdownMultiply.classList.contains("show")) {
+        openDropdownMultiply.classList.remove("show");
+      }
+    }
+  }
+};
+
+/* DIVIDE VERSION */
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionDivide() {
+  document.getElementById("myDropdownDivide").classList.toggle("show");
 }
 
-let product = multiply(2, 3);
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtndivide")) {
+    var dropdownsdivide = document.getElementsByClassName(
+      "dropdown-content-divide"
+    );
+    var i;
+    for (i = 0; i < dropdownsplus.length; i++) {
+      var openDropdownDivide = dropdowns[i];
+      if (openDropdownDivide.classList.contains("show")) {
+        openDropdownDivide.classList.remove("show");
+      }
+    }
+  }
+};
 
-*/
-/* Rotating an image
-function handleScroll() {
-  console.log(window.scrollY);
-  document.querySelector(
-    "img"
-  ).style = `transform: rotate(${window.scrollY}deg)`;
-}
-*/
+/* EQUALS VERSION */
 
-let button = document.querySelector("button");
-
-let aside = document.querySelector("aside");
-
-function toggleModal() {
-  aside.classList.toggle("active");
-}
-
-// Wire
-button.addEventListener("click", toggleModal);
-aside.addEventListener("click", toggleModal);
-
-first = "Madi";
-last = "Kirkman";
-
-console.log(first + " " + last);
-
-//telling it to go find button on page
-var button = document.querySelector("button");
-//for multiple buttons, do var buttons = document.querySelectorAll("button");
-//for specific button, var button = document.querySelector(".special-button");
-function logName() {
-  console.log(first + " " + last);
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionEquals() {
+  document.getElementById("myDropdownEquals").classList.toggle("show");
 }
 
-function appendName() {
-  let p = document.createElement("p");
-  p.innerText = first + " " + last;
-  document.body.appendChild(p);
-}
-button.addEventListener("click", appendName);
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtnequals")) {
+    var dropdownsequals = document.getElementsByClassName(
+      "dropdown-content-equals"
+    );
+    var i;
+    for (i = 0; i < dropdownsequals.length; i++) {
+      var openDropdownEquals = dropdownsequals[i];
+      if (openDropdownEquals.classList.contains("show")) {
+        openDropdownEquals.classList.remove("show");
+      }
+    }
+  }
+};
