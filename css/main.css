@@ -15,14 +15,12 @@ video {
 body {
   min-height: 300vh;
 }
-
+*/
 img {
   aspect-ratio: 1;
   object-fit: cover;
-  max-width: 20rem;
-  position: fixed;
+  max-width: 30rem;
 }
-*/
 aside {
   display: none;
   background: black;
@@ -220,7 +218,7 @@ p {
 /* DIVIDE DROPDOWN */
 
 .dropbtndivide {
-  background-color: #96c6e2;
+  background-color: #5ac4e6;
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
@@ -232,7 +230,7 @@ p {
 /* Dropdown button on hover & focus */
 .dropbtndivide:hover,
 .dropbtndivide:focus {
-  background-color: #96c6e2;
+  background-color: #5ac4e6;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -338,6 +336,230 @@ p {
 
   border-top: 20px solid white;
 }
+* {
+  box-sizing: border-box;
+}
 
-.Plusimages {
+/* Slideshow container 
+.slideshow-container-plus {
+  max-width: 30rem;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default 
+.mySlidesPlus {
+  display: none;
+}
+
+/* Next & previous buttons 
+.prevplus,
+.nextplus {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right 
+.nextplus {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through 
+.prevplus:hover,
+.nextplus:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* The dots/bullets/indicators 
+.dotplus {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activeplus,
+.dotplus:hover {
+  background-color: #717171;
+}
+
+/* Fading animation 
+.fadeplus {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*/
+body {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordiancontainer {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+button.accordion {
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:after {
+  font-family: FontAwesome;
+  content: "\f150";
+  font-family: "fontawesome";
+  font-size: 18px;
+  float: right;
+}
+
+button.accordion.is-open:after {
+  content: "\f151";
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  background-color: black;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.articleplus {
+  background-color: #cd8355;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.articlemultiply {
+  background-color: #86e0a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.articledivide {
+  background-color: #b6def5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.articleequals {
+  background-color: #e87d7f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+ {
+  box-sizing: border-box;
+}
+.mySlides1,
+.mySlides2 .mySlides3,
+.mySlides4 {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
