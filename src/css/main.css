@@ -1,20 +1,28 @@
 /* Decent Defaults */
 
-img,
-video {
+img,{
   width: 100%;
   height: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top, bottom: 1rem;
-  max-width: 10rem;
+  max-width: 20rem;
 }
+
+
 
 img {
   aspect-ratio: 1;
-  max-width: 30rem;
-
+  max-width: 20rem;
 }
+
+/* variables */
+:root{
+  --orange: #c35717;
+  --green: #60c965;
+  --blue: #5ac4e6;
+  --red:#ca0f11;
+  }
 
 body {
   background-color: black;
@@ -27,7 +35,7 @@ body {
 font-family: mic-32-new-rounded-web, sans-serif;
 font-weight: 400;
 font-style: normal;
-color: #c35717;
+color: var(--orange);
 }
 
 h2 {
@@ -35,16 +43,15 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #96c6e2;
+  padding-left: 2rem; padding-right: 2rem;
 }
 @media (min-width: 40em) {
 h1 {
   font-size: 5rem;
 }
-
 h2 {
   font-size: 2.5rem;
 }
-
 p {
   font-size: 1.6rem;
   line-height: 2.9rem;
@@ -71,7 +78,7 @@ li a {
 .js-scroll {
   width: 30rem;
   height: 7rem;
-  background-color: #c35717;
+  background-color: var(--orange);
   transition: background-color 2000ms;
   margin-bottom: 2rem;
   padding-left: 2rem;, padding-right: 2rem;
@@ -90,6 +97,11 @@ li a {
   font-size: 2rem;
 }
 
+.scroll-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 @media (max-width: 40em) {
   h1 {
@@ -118,7 +130,7 @@ font-size: 1rem;
 .js-scroll {
   width: 15rem;
   height: 10rem;
-  background-color: #c35717;
+  background-color: var(--orange);
   transition: background-color 2000ms;
   margin-bottom: 2rem;
   padding-left: 2rem;, padding-right: 2rem;
@@ -142,7 +154,8 @@ font-size: 1rem;
 }
 
 .accordion {
-  color: #c35717;
+  color: white;
+  background-color: var(--orange);
   border-radius: 2rem;
   font-family: mic-32-new-rounded-web, sans-serif;
   font-weight: 400;
@@ -152,6 +165,7 @@ font-size: 1rem;
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
+  margin-top: 3rem; margin-bottom: 2rem;
   
 }
 
@@ -172,7 +186,7 @@ p {
 
 /* Dropdown Button */
 .dropbtnplus {
-  background-color: #c35717;
+  background-color: var(--orange);
   color: white;
   padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
@@ -180,10 +194,10 @@ p {
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
+ /*Dropdown button on hover & focus */
 .dropbtnplus:hover,
 .dropbtnplus:focus {
-  background-color: #c35717;
+  background-color: var(--orange);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -198,6 +212,7 @@ p {
   position: absolute;
   background-color: black;
   min-width: 10rem;
+  
   border: .2rem solid white;\  
   padding: 2rem;
   z-index: 1;
@@ -213,7 +228,7 @@ p {
 }
 
 .dropdown-content-plus p {
-  min-width: 150px;
+  min-width: 9.375rem;
 }
 
 /* Change color of dropdown links on hover */
@@ -235,10 +250,11 @@ p {
   border-top: 1.25rem solid white;
 }
 
+
 /*MULTIPLY DROPDOWN*/
 
 .dropbtnmultiply {
-  background-color: #60c965;
+  background-color: var(--green);
   color: white;
   padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
@@ -249,7 +265,7 @@ p {
 /* Dropdown button on hover & focus */
 .dropbtnmultiply:hover,
 .dropbtnmultiply:focus {
-  background-color: #60c965;
+  background-color: var(--green);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -300,7 +316,7 @@ p {
 /* DIVIDE DROPDOWN */
 
 .dropbtndivide {
-  background-color: #5ac4e6;
+  background-color: var(--blue);
   color: white;
   padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
@@ -311,7 +327,7 @@ p {
 /* Dropdown button on hover & focus */
 .dropbtndivide:hover,
 .dropbtndivide:focus {
-  background-color: #5ac4e6;
+  background-color: var(--blue);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -362,7 +378,7 @@ p {
 /* EQUALS DROPDOWN */
 
 .dropbtnequals {
-  background-color: #ca0f11;
+  background-color: var(--red);
   color: white;
   padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
@@ -373,7 +389,7 @@ p {
 /* Dropdown button on hover & focus */
 .dropbtnequals:hover,
 .dropbtnequals:focus {
-  background-color: #ca0f11;
+  background-color: var(--red);
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -403,7 +419,6 @@ p {
 }
 
 
-}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
@@ -557,7 +572,7 @@ img {
 /* On hover, add color */
 .prev:hover,
 .next:hover {
-  background-color: #f1f1f1;
+  background-color: white;
   color: black;
 }
 
@@ -572,17 +587,38 @@ ul a {
   justify-content: center;
   align-content: center;
   height: 50vh;
+  
 }
 .text {
-  color: whitesmoke;
+  color: white;
   font-family: mic-32-new-rounded-web, sans-serif;
   font-weight: 400;
   font-style: normal;
   padding: 1em 2em;
   text-align: center;
-  font-size: 3.5em;
+  font-size: 2.5rem;
 }
 
 .txt-rotate {
-  color: #c35717;
+  color: var(--orange);
+}
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
 }
