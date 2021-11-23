@@ -1,12 +1,3 @@
-/*
-Larger
-Comments
-
-
-
-
-
-
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunctionPlus() {
@@ -100,40 +91,7 @@ window.onclick = function (event) {
     }
   }
 };
-/*
-var slideIndexPlus = 1;
-showSlidesPlus(slideIndexPlus);
 
-// Next/previous controls
-function plusSlidesplus(n) {
-  showSlidesPlus((slideIndexPlus += n));
-}
-
-// Thumbnail image controls
-function currentSlidePlus(n) {
-  showSlidesPlus((slideIndexPlus = n));
-}
-
-function showSlidesPlus(n) {
-  var i;
-  var slidesplus = document.getElementsByClassName("mySlidesPlus");
-  var dotsplus = document.getElementsByClassName("dotplus");
-  if (n > slidesplus.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slidesplus.length;
-  }
-  for (i = 0; i < slidesplus.length; i++) {
-    slidesplus[i].style.display = "none";
-  }
-  for (i = 0; i < dotsplus.length; i++) {
-    dotsplus[i].className = dotsplus[i].className.replace(" activeplus", "");
-  }
-  slidesplus[slideIndexPlus - 1].style.display = "block";
-  dotsplus[slideIndexPlus - 1].className += " activeplus";
-}
-*/
 const accordionBtns = document.querySelectorAll(".accordion");
 
 accordionBtns.forEach((accordion) => {

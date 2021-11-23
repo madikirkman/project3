@@ -100,7 +100,7 @@ p {
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -115,6 +115,8 @@ p {
 .dropdownplus {
   position: relative;
   display: inline-block;
+  border-color: #cd8355;
+  border-width: 3rem;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -122,15 +124,15 @@ p {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 10rem;
+  box-shadow: 0rem 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-plus a {
   color: black;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -148,10 +150,10 @@ p {
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
 
-  border-top: 20px solid white;
+  border-top: 1.25rem solid white;
 }
 
 /*MULTIPLY DROPDOWN*/
@@ -161,7 +163,7 @@ p {
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -183,15 +185,15 @@ p {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 10rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-multiply a {
   color: black;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -209,10 +211,10 @@ p {
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
 
-  border-top: 20px solid white;
+  border-top: 1.25rem solid white;
 }
 
 /* DIVIDE DROPDOWN */
@@ -222,7 +224,7 @@ p {
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -244,15 +246,15 @@ p {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 10rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-divide a {
   color: black;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -270,10 +272,10 @@ p {
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
 
-  border-top: 20px solid white;
+  border-top: 1.25rem solid white;
 }
 
 /* EQUALS DROPDOWN */
@@ -283,7 +285,7 @@ p {
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
 }
@@ -305,15 +307,15 @@ p {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 10rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content-equals a {
   color: black;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -331,101 +333,20 @@ p {
 .arrow-down {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
 
-  border-top: 20px solid white;
+  border-top: 1.25rem solid white;
 }
 * {
   box-sizing: border-box;
 }
 
-/* Slideshow container 
-.slideshow-container-plus {
-  max-width: 30rem;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default 
-.mySlidesPlus {
-  display: none;
-}
-
-/* Next & previous buttons 
-.prevplus,
-.nextplus {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right 
 .nextplus {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
-/* On hover, add a black background color with a little bit see-through 
-.prevplus:hover,
-.nextplus:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-/* The dots/bullets/indicators 
-.dotplus {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.activeplus,
-.dotplus:hover {
-  background-color: #717171;
-}
-
-/* Fading animation 
-.fadeplus {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-*/
 body {
   display: flex;
   gap: 2rem;
@@ -435,8 +356,8 @@ body {
 
 .accordiancontainer {
   width: 80%;
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 37.5rem;
+  margin: 3.125rem auto;
 }
 
 button.accordion {
@@ -445,8 +366,8 @@ button.accordion {
   border: none;
   outline: none;
   text-align: left;
-  padding: 15px 20px;
-  font-size: 18px;
+  padding: 0.9375rem 1.25rem;
+  font-size: 1.125rem;
   color: #333;
   cursor: pointer;
   transition: background-color 0.2s linear;
@@ -454,14 +375,9 @@ button.accordion {
 
 button.accordion:after {
   font-family: FontAwesome;
-  content: "\f150";
   font-family: "fontawesome";
-  font-size: 18px;
+  font-size: 1.125rem;
   float: right;
-}
-
-button.accordion.is-open:after {
-  content: "\f151";
 }
 
 button.accordion:hover,
@@ -471,9 +387,9 @@ button.accordion.is-open {
 
 .accordion-content {
   background-color: black;
-  border-left: 1px solid whitesmoke;
-  border-right: 1px solid whitesmoke;
-  padding: 0 20px;
+  border-left: 0.0625rem solid white;
+  border-right: 0.0625rem solid white;
+  padding: 0 1.25rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
@@ -529,7 +445,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 62.5rem;
   position: relative;
   margin: auto;
 }
@@ -541,20 +457,20 @@ img {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 1rem;
+  margin-top: -1.375rem;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.1875rem 0.1875rem 0;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
 /* On hover, add a grey background color */
@@ -562,4 +478,8 @@ img {
 .next:hover {
   background-color: #f1f1f1;
   color: black;
+}
+
+ul a {
+  color: white;
 }
