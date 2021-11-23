@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="heading">
-      <h1>Ed Sheeran</h1>
+      <h1 class="title">Ed Sheeran</h1>
       <h2>Albums through the years</h2>
     </div>
 
@@ -28,7 +28,13 @@
       since then his popularity and success has increased dramatically.
     </p>
 
+    <section class="scroll-container">
+      <div class="scroll-element js-scroll">
+      <h1>ALBUM INFO</h1>
+      </div>
+    
 
+<div class="pluscontainer">
       <article class="articleplus">
         <img src="./img/plus.jpeg" alt="Plus album cover" />
         <div class="dropdownplus">
@@ -66,8 +72,10 @@
         <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
         <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
       </div>
-      
+      </div>
 
+
+      <div class="multiplycontainer">
       <article class="articlemultiply">
         <img src="./img/multiply.jpeg" alt="Multiply album cover" />
         <div class="dropdownmultiply">
@@ -105,10 +113,9 @@
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
+</div>
 
-
-
-
+<div class="dividecontainer">
       <article class="articledivide">
         <img src="./img/divide.jpeg" alt="Divide album cover" />
  
@@ -146,15 +153,9 @@
             <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
             <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
           </div>
+        </div>
 
-
-  <!-- Next and previous buttons -->
-  <a class="prevplus" onclick="plusSlidesplus(-1)">&#10094;</a>
-  <a class="nextplus" onclick="plusSlidesplus(1)">&#10095;</a>
-</div>
-<br>
-
-
+<div class="equalscontainer">
       <article class="articleequals">
         <img src="./img/equals.jpeg" alt="Equals album cover" />
  
@@ -191,8 +192,19 @@
   <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
   <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
 </div>
+</div>
 
-    <div class="accordiancontainer">
+
+<section class="pen">
+  <h1 class="text">My favorite album is
+    <span
+       class="txt-rotate"
+       data-period="2000"
+       data-rotate='[ "Plus.", "Multiply.", "Divide.", "Equals.", "All of the above :)" ]'></span>
+  </h1>
+  </section>
+
+    <div class="accordioncontainer">
       <button class="accordion">Sources</button>
       <div class="accordion-content">
         <p>
@@ -206,7 +218,6 @@
 
         </p>
       </div>
-
 
 </body>
 </html>
