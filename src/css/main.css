@@ -6,51 +6,28 @@ video {
   height: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top, bottom: 1rem;
   max-width: 10rem;
 }
 
-/*
-body {
-  min-height: 300vh;
-}
-*/
 img {
   aspect-ratio: 1;
-  object-fit: cover;
   max-width: 30rem;
-}
-aside {
-  display: none;
-  background: black;
-  position: fixed;
-  inset: 0;
+
 }
 
-aside > div {
-  background: white;
-  max-width: 75ch;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
-}
-
-aside.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 body {
   background-color: black;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
 }
-
-h1 {
-  font-family: mic-32-new-rounded-web, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #c35717;
-  font-size: 3em;
+.title {
+font-family: mic-32-new-rounded-web, sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #c35717;
 }
 
 h2 {
@@ -58,24 +35,124 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #96c6e2;
-  font-size: 1.75rem;
+}
+@media (min-width: 40em) {
+h1 {
+  font-size: 5rem;
 }
 
-button {
-  color: white;
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.9rem;
+  padding-left: 2rem; padding-right: 2rem;
+}
+
+.accordion {
+  font-size: 2.25rem;
+}
+li a {
+  font-size: 2rem;
+}
+
+.pluscontainer, .multiplycontainer, .dividecontainer, .equalscontainer {
+  display: flex;
+  flex-direction: row;
+}
+.articleplus, .articlemultiply, .articledivide, .articleequals {
+  margin-right: 3rem; 
+  margin-top: 2rem; margin-bottom: 2rem;
+}
+}
+
+.js-scroll {
+  width: 30rem;
+  height: 7rem;
   background-color: #c35717;
+  transition: background-color 2000ms;
+  margin-bottom: 2rem;
+  padding-left: 2rem;, padding-right: 2rem;
+  border-radius: 1.5rem;
+  color: black;
+  font-family: mic-32-new-rounded-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+.js-scroll.scrolled {
+  background-color: white;
+}
+
+.PLUS {
+  font-size: 2rem;
+}
+
+
+@media (max-width: 40em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+  font-size:1.5rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  article {
+    max-width: 20rem;
+  }
+ .accordion {
+  font-size: 1.25rem;
+ }
+ li a{
+font-size: 1rem;
+ }
+
+ .articleplus, .articlemultiply, .articledivide, .articleequals {
+  margin-bottom: 3rem; margin-top: 3rem;
+}
+.js-scroll {
+  width: 15rem;
+  height: 10rem;
+  background-color: #c35717;
+  transition: background-color 2000ms;
+  margin-bottom: 2rem;
+  padding-left: 2rem;, padding-right: 2rem;
+  border-radius: 1.5rem;
+  color: black;
+  font-family: mic-32-new-rounded-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+
+.js-scroll.scrolled {
+  background-color: white;
+}
+
+.PLUS {
+  font-size: 2rem;
+}
+
+
+}
+
+.accordion {
+  color: #c35717;
   border-radius: 2rem;
   font-family: mic-32-new-rounded-web, sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   border: none;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .heading {
@@ -86,20 +163,18 @@ button {
 
 p {
   color: white;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   font-family: mic-32-new-rounded-web, sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 2.5rem;
 }
 
 /* Dropdown Button */
 .dropbtnplus {
   background-color: #c35717;
   color: white;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -115,8 +190,6 @@ p {
 .dropdownplus {
   position: relative;
   display: inline-block;
-  border-color: #cd8355;
-  border-width: 3rem;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -125,16 +198,22 @@ p {
   position: absolute;
   background-color: black;
   min-width: 10rem;
-  box-shadow: 0rem 0.5rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  border: .2rem solid white;\  
+  padding: 2rem;
   z-index: 1;
+
 }
 
 /* Links inside the dropdown */
 .dropdown-content-plus a {
   color: black;
-  padding: 0.75rem 1rem;
+  padding: .75rem 1rem;
   text-decoration: none;
   display: block;
+}
+
+.dropdown-content-plus p {
+  min-width: 150px;
 }
 
 /* Change color of dropdown links on hover */
@@ -161,8 +240,7 @@ p {
 .dropbtnmultiply {
   background-color: #60c965;
   color: white;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -188,6 +266,8 @@ p {
   min-width: 10rem;
   box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border: .2rem solid white;
+  padding: 1rem;
 }
 
 /* Links inside the dropdown */
@@ -222,8 +302,7 @@ p {
 .dropbtndivide {
   background-color: #5ac4e6;
   color: white;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -249,6 +328,8 @@ p {
   min-width: 10rem;
   box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border: .2rem solid white;
+  padding: 1rem;
 }
 
 /* Links inside the dropdown */
@@ -283,8 +364,7 @@ p {
 .dropbtnequals {
   background-color: #ca0f11;
   color: white;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 8rem; padding-right: 8rem;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -310,19 +390,19 @@ p {
   min-width: 10rem;
   box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border: .2rem solid white;
+  padding: 1rem;
 }
 
-/* Links inside the dropdown */
-.dropdown-content-equals a {
+/* content inside the dropdown */
+.dropdown-content-equals a{
   color: black;
   padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content-equals p:hover {
-  background-color: black;
+
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -347,12 +427,6 @@ p {
   border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
-body {
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  align-items: center;
-}
 
 .accordiancontainer {
   width: 80%;
@@ -360,7 +434,7 @@ body {
   margin: 3.125rem auto;
 }
 
-button.accordion {
+button {
   width: 100%;
   background-color: whitesmoke;
   border: none;
@@ -371,11 +445,13 @@ button.accordion {
   color: #333;
   cursor: pointer;
   transition: background-color 0.2s linear;
+  border-radius: 1rem;
 }
 
 button.accordion:after {
-  font-family: FontAwesome;
-  font-family: "fontawesome";
+  font-family: mic-32-new-rounded-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.125rem;
   float: right;
 }
@@ -393,6 +469,10 @@ button.accordion.is-open {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+}
+
+article {
+  padding-left: 5rem; padding-right: 5rem; padding-top:5rem; padding-bottom: 5rem;
 }
 
 .articleplus {
@@ -441,11 +521,12 @@ button.accordion.is-open {
 }
 img {
   vertical-align: middle;
+  object-fit: cover;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 62.5rem;
+  max-width: 20rem;
   position: relative;
   margin: auto;
 }
@@ -473,7 +554,7 @@ img {
   border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
-/* On hover, add a grey background color */
+/* On hover, add color */
 .prev:hover,
 .next:hover {
   background-color: #f1f1f1;
@@ -482,4 +563,26 @@ img {
 
 ul a {
   color: white;
+}
+
+
+.pen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
+}
+.text {
+  color: whitesmoke;
+  font-family: mic-32-new-rounded-web, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.txt-rotate {
+  color: #c35717;
 }
